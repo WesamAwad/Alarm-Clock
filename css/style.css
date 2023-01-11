@@ -1,0 +1,64 @@
+
+body{
+  min-height: 100vh;
+  background: #e8ecf1;
+}
+.Container{
+  width: 440px;
+  padding: 25px 25px 30px;
+  background: #607d8b2e;
+  border-radius: 10px;
+  flex-direction: column;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+.Container img{
+  max-width: 103px;
+  border-radius: 50%;
+}
+.Container h1{
+  font-size: 38px;
+  font-weight: 500;
+  margin: 30px 0;
+}
+.Container .Alarms{
+  width: 100%;
+  justify-content: space-between;
+}
+body, .Container, .Alarms{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Alarms.disable{
+  cursor: no-drop;
+}
+.Alarms .Time{
+  padding: 0 10px;
+  border-radius: 5px;
+  border: 1px solid #bfbfbf;
+  width: calc(100% / 3 - 5px);
+}
+.Alarms.disable .Time{
+  opacity: 0.6;
+  pointer-events: none;
+}
+.Time select{
+  width: 100%;
+  height: 50px;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 19px;
+}
+.Container button{
+  width: 45%;
+  border: none;
+  outline: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 20px;
+  padding: 15px 0;
+  margin-top: 20px;
+  border-radius: 5px;
+  background: #f44336;
+}
